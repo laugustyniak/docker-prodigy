@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  prodigy:
+    build: .
+    expose:
+      - "8100-8200"
+    volumes:
+      - "/datasets:/datasets"
+      - "/models:/models"
+      - "/nfs:/nfs"
